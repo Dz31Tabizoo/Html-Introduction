@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    
+    <head></head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rafik Html</title>
     <script src="Script.js"></script>
 </head>
 <body>
-
 
 <B>hi This is my First Pages :</B>
 <h1 style="color: rgb(2,52,63);font-style: italic;">Main Title Of The Page</h1>
@@ -17,33 +17,33 @@
 <h5>Specific Poin</h5>
 <h6>Minor Details</h6>
 
-<p style="color: darkblue;font-size:20px;list-style-position: outside;">paragraph with tag : this is a Paragraph in HTML and i will color it blue 
+<p style="color: darkblue;font-size:20px;list-style-position: outside;">  paragraph with tag : this is a Paragraph in HTML and i will color it blue 
 (*) I did Entert here but nothink change . so the white spaces only get the html file bigger and slow the page
 </p>
     
-///avoid this
-<p>rafik<p>swatch</p> test p in p : nasted paragraphs are not avalable.</p>
 
-<p>
-    to take a new line in the same paragraph tag we use <br>"br" as a Break
-     Line tag  with out closing tag <br> We use that for separate Lines like Poemes
-      or Addresses <br> we should use it wisly to not break the page flow and screen 
-      reader meanings  
-</p>
+avoid this
+<    p>rafik<p>swatch</p> test p in p : nasted paragraphs are not avalable.</p>
 
-// pre tag
-<h2 style="color:rgb(2, 52, 63);">PreFormated Paragraph "pre"</h2>
-<pre> Hello   
+
+   to take a new line in the same paragraph tag we use <br>"br" as a Break
+   Line tag  with out closing tag <br> We use that for separate Lines like Poemes
+   or Addresses <br> we should use it wisly to not break the page flow and screen 
+    reader meanings  
+    </p>
+
+    
+     <h2 style="color:rgb(2, 52, 63);"> < pre >: PreFormated Paragraph "pre"</h2>
+    <pre> Hello   
 
     space accepted and preserved by pre 
-
-
+    
+    
     its a block element not a line element 
-
+    
     we can incule in-line elements
-</pre>
-
-// Horizental roule
+    </pre>
+<h2><br> hr: Horizontal rule </h2>
 
 <hr style="width: auto;color: brown;height: 3px; background-color: blue;">
 
@@ -51,14 +51,45 @@
 
 <hr style="background-color:rgb(2, 52, 63);border: 0px; height: 2px;">
 
-
+<h2><br> Span: </h2>
 // "span" in-line 
 
 <p>to style some <span style="color: aquamarine;">words</span> or elements inside a paragraph</p>
-<p>On click this <span onclick="alert('hello')" style="color: red;">button</span> allert will show</p>
+<p>On click this <span onclick="alert('hello')" style="color: red;cursor: crosshair;">button</span> allert will show</p>
 we use this inline container:  when we want to style or script a part of a paragragh
 
-// "div" division to separate page into sections
+// "div" block-level Element division container to separate page into sections and divisions and style them together
+<h2><br> divs: </h2>
+<div id="header" style="color: deeppink;background-color: greenyellow;">
+<p>div container text 'Here we can set all elements as paragraphs and texts and styling'</p>
+</div>
+
+
+<div id="body" style="color: brown;">  <p>this is the divition with id="body" we can se that <br>
+    <span style="font-size: 30px;">div</span> encapsulate a section of html elements <br>
+    In short, choose 'div' for structural purposes that require block-level divisions and <br> 'span' for inline styling within text or other content without affecting the overall layout </p>
+</div>
+
+<h2><br> Comments: </h2>
+<!-- comment -->
+
+    <!-- 
+
+multi-line comment : we should not write so mush comments in html documents
+it get the file size bigger <more byte>and will effect the download page speed 
+
+there is tools to compress files and get the non unessecery spaces and comments out called GZIP
+    -->
+<hr style="width: 10px; background-color: rgb(2, 52, 63);">
+
+<p>This is a <b>Bold</b> example </p>
+<p>this is a <strong>Strong</strong>example</p>
+<p>both are text blod formating inline tags</p>
+
+<h3 style="color: darkslategray;font-size: 20px;">The diffirence Between <b>Bold</b> & <strong>Strong</strong> is:</h3>
+<h2 style="color: lightseagreen;"> < b > is used just stylistically offset text with no importance added </h2>
+<h2 style="color: rgb(32, 175, 127);"> < strong > is used to indicate that its content are of strong importance seriousness, or urgency. <br>
+the browser render the content in blod similar to < b > tag, but the key diffirence is in the semantic weight strong carries wich affect the screen reader </h2>
 
 
 </body>
